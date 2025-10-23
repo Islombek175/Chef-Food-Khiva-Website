@@ -4,7 +4,7 @@
 }
 
 :root {
-	--primary-color: rgb(255, 220, 0);
+	--primary-color: #e4b95b;
 	--secondary-color: rgb(152, 152, 197);
 }
 
@@ -14,7 +14,6 @@
 	width: 7%;
 	border-radius: 50%;
 	background-color: black;
-	box-shadow: 0 0 30px 5px var(--primary-color);
 }
 
 .nav-link {
@@ -22,16 +21,19 @@
 	font-size: 1.1rem;
 }
 
-.navbar {
-	box-shadow: 3px 3px 10px var(--secondary-color);
-}
-
-.nav-link:hover {
+.nav-link.active:hover, .nav-link:hover {
 	color: var(--primary-color);
 }
 
 /* ABOUT SECTION */
 
 .about-section {
-	margin: 5vh 2vw;
+	background-image: url('offer-background.jpg');
+	padding: 5vh 2vw;
+	color: aliceblue;
+}
+
+.chef-icon {
+	width: 10%;
+	backdrop-filter: blur(5px);
 }
