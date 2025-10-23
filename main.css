@@ -4,12 +4,17 @@
 }
 
 :root {
-	--primary-color: #e4b95b;
-	--secondary-color: rgb(152, 152, 197);
+	--primary-color: rgb(228, 185, 91);
+	--light-color: rgb(244, 244, 244);
+	--secondary-color: rgb(56, 56, 72);
 }
 
 body {
-	font-family: 'Zalando Sans', sans-serif;
+	font-family: 'Quicksand', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+	letter-spacing: 0.15px;
 }
 
 a {
@@ -17,6 +22,10 @@ a {
 }
 
 /* HEADER */
+
+header {
+	background-color: var(--light-color);
+}
 
 .header-logo {
 	width: 7%;
@@ -42,7 +51,45 @@ a {
 	color: aliceblue;
 }
 
-.section-title {
+.about-section-title {
 	color: var(--primary-color);
 	text-align: center;
+	padding: 7vh 0 5vh;
+}
+
+/* MENU SECTION */
+
+.menu-section {
+	background-color: var(--light-color);
+}
+
+.menu-section-title {
+	color: var(--secondary-color);
+	text-align: center;
+	padding: 7vh 0 5vh;
+}
+
+.menu-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5vh;
+}
+
+.food-icon {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+.food-content {
+	padding-left: 10px;
+}
+
+.food-title {
+	font-weight: 600;
+}
+
+.food-price {
+	color: var(--primary-color);
 }
