@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -88,6 +92,12 @@ header {
 	width: 150px;
 	height: 150px;
 	border-radius: 50%;
+	transition: 0.3s ease;
+}
+
+.food-icon:hover {
+	transform: scale(1.1);
+	/* transition: 0.3s ease; */
 }
 
 .food-content {
