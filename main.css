@@ -11,7 +11,7 @@ html {
 	--primary-color: rgb(228, 185, 91);
 	--light-color: rgb(244, 244, 244);
 	--secondary-color: rgb(56, 56, 72);
-	--bg-image: url('offer-background.jpg') no-repeat center center / cover;
+	--bg-image: url('offer-background.jpg') center/cover no-repeat fixed;
 }
 
 body {
@@ -97,7 +97,6 @@ header {
 
 .food-icon:hover {
 	transform: scale(1.1);
-	/* transition: 0.3s ease; */
 }
 
 .food-content {
