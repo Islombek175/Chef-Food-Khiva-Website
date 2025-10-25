@@ -123,9 +123,11 @@ header {
 	color: var(--light-color);
 }
 
-.fa-solid,
-.fa-brands {
-	color: var(--light-color);
-	font-size: 2rem;
-	padding: 5%;
+.icon {
+	width: 5%;
+	padding: 0 5px;
+}
+
+.fa-location-dot {
+	font-size: 1.5rem;
 }
