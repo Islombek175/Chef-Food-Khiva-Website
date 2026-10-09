@@ -1,92 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="Chef Food Khiva — Xivadagi eng mazali fast food. Burgerlar, hot-doglar, lavash va boshqa taomlar.">
+	<meta name="theme-color" content="#0f0f1a">
+
 	<!-- ICON -->
-	<link rel="icon" href="/logo.png" type="image/x-icon">
-	<!-- BOOTSTRAP -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-	<!-- FONT AWESOME -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-		integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<!-- GOOGLE FONTS -->
+	<link rel="icon" href="logo.png" type="image/png">
+
+	<!-- GOOGLE FONTS - Only Dancing Script for brand, rest is system fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap"
-		rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+
+	<!-- BOOTSTRAP 5.3 CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
 	<!-- STYLE -->
 	<link rel="stylesheet" href="main.css">
-	<title>Chef-food Khiva</title>
+	<title>Chef Food Khiva — Mazali Fast Food</title>
 </head>
 
 <body>
-	<header>
-		<!-- NAVBAR -->
-		<nav class="navbar navbar-expand-lg bg-body-tertiary">
-			<div class="container">
-				<a class="navbar-brand" href="#">Chef Food</a>
-				<img class="header-logo text-center" src="logo.png" alt="">
-				<button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				</button>
-				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link active" href="#home">Asosiy</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#about">Biz haqimizda</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#menu">Menu</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#contact">Bog'lanish</a>
-						</li>
-					</ul>
+
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+		<div class="container">
+			<a class="navbar-brand" href="#hero">
+				<img src="logo.png" alt="Chef Food Logo" class="nav-logo" width="50" height="50" loading="eager">
+				Chef Food
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active" href="#hero">Asosiy</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">Biz haqimizda</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#menu">Menu</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Bog'lanish</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- HERO SECTION -->
+	<section id="hero" class="hero-section">
+		<div class="hero-overlay"></div>
+		<div class="container hero-content">
+			<div class="hero-badge animate fade-in-up">🔥 Xivaning #1 Fast Food'i</div>
+			<h1 class="hero-title animate fade-in-up delay-1">
+				Mazali taomlar,<br>
+				<span class="text-accent">unutilmas ta'm</span>
+			</h1>
+			<p class="hero-subtitle animate fade-in-up delay-2">
+				Yangi pishgan burgerlar, xushbo'y hot-doglar va maxsus retseptlar — barchasi siz uchun!
+			</p>
+			<div class="hero-buttons animate fade-in-up delay-3">
+				<a href="#menu" class="btn-primary-custom">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<path d="M3 3h18v18H3zM12 8v8M8 12h8" />
+					</svg>
+					Menuni ko'rish
+				</a>
+				<a href="#contact" class="btn-secondary-custom">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<path
+							d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+					</svg>
+					Bog'lanish
+				</a>
+			</div>
+			<div class="hero-stats animate fade-in-up delay-4">
+				<div class="stat-item">
+					<span class="stat-number">14+</span>
+					<span class="stat-label">Yillik tajriba</span>
+				</div>
+				<div class="stat-divider"></div>
+				<div class="stat-item">
+					<span class="stat-number">18+</span>
+					<span class="stat-label">Turdagi taomlar</span>
+				</div>
+				<div class="stat-divider"></div>
+				<div class="stat-item">
+					<span class="stat-number">1000+</span>
+					<span class="stat-label">Mamnun mijozlar</span>
 				</div>
 			</div>
-		</nav>
-	</header>
+		</div>
+	</section>
 
 	<!-- ABOUT SECTION -->
 	<section id="about" class="about-section">
 		<div class="container">
-			<h1 class="about-section-title">Biz haqimizda</h1>
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="about-content text-center">
-						<p class="about-text">📍 Joyingizni topdingizmi?
-							Endi lazzatni topish vaqti keldi!
-							Bizda sizni yangi pishgan burgerlar, xushbo‘y fri kartoshkalar va sovuq ichimliklar kutmoqda.
-							Tez xizmat, qulay narx va ajoyib muhit — barchasi siz uchun yaratilgan.
+			<div class="section-header animate fade-in-up">
+				<span class="section-tag">Biz haqimizda</span>
+				<h2 class="section-title">Ta'mning <span class="text-accent">san'ati</span></h2>
+			</div>
+			<div class="row g-4 align-items-center">
+				<div class="col-lg-6 animate fade-in-left">
+					<div class="about-card">
+						<div class="about-card-icon">📍</div>
+						<h3 class="about-card-title">Joyingizni topdingizmi?</h3>
+						<p class="about-card-text">
+							Endi lazzatni topish vaqti keldi! Bizda sizni yangi pishgan burgerlar, xushbo'y fri
+							kartoshkalar va sovuq ichimliklar kutmoqda. Tez xizmat, qulay narx va ajoyib muhit —
+							barchasi siz uchun yaratilgan.
 						</p>
-						<p class="about-text">🕒 Ish vaqti: har kuni 10:00 dan 23:00 gacha.
-							Keling, lazzatni his eting va ochlikni unuting!
-						</p>
-						<p class="about-text"><a
-								href="https://www.google.com/maps/place/Chef+food/@41.4037129,60.3394641,12z/data=!3m1!4b1!4m6!3m5!1s0x41dfa5e388566cb7:0xefa1feb8742d8ec4!8m2!3d41.4037129!4d60.3394641!16s%2Fg%2F11sx4f_mrq?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D"><i
-									class="fa-solid fa-location-dot"></i>
-								Manzil:</a>
-						</p>
-						<img src="./icons/fastfood-icon.png" alt="" width="10%">
+						<div class="about-info-row">
+							<span class="about-info-icon">🕒</span>
+							<span>Har kuni <strong>10:00</strong> dan <strong>23:00</strong> gacha</span>
+						</div>
+						<a href="https://www.google.com/maps/place/Chef+food/@41.4037129,60.3394641,12z/data=!3m1!4b1!4m6!3m5!1s0x41dfa5e388566cb7:0xefa1feb8742d8ec4!8m2!3d41.4037129!4d60.3394641!16s%2Fg%2F11sx4f_mrq?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D"
+							class="about-location-btn" target="_blank" rel="noopener">
+							<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+								<circle cx="12" cy="10" r="3" />
+							</svg>
+							Manzilni ko'rish
+						</a>
 					</div>
 				</div>
-				<div class="col-lg-6">
-					<div class="about-image">
-						<div class="image-placeholder text-center">
-							<p>Bizning fast food xonamizdagi har bir taom — bu Atajanov Sardorbekning mehr bilan tayyorlagan asari. U
-								Yevropa oshxonasida 8 yil ishlagan, keyin esa O‘zbekistonda 6 yil davomida o'z mahoratini yanada
-								boyitgan. Chef uchun ovqat tayyorlash bu shunchaki ish emas, bu — san'at. Shuning uchun har bir
-								burger, hot-dog yoki fri kartoshka o'zining betakror ta’miga ega. Bir marta tatib ko'ring — va siz
-								farqni darhol sezishingiz mumkin!</p>
-							<br>
-							<img src="./icons/chef-icon.png" alt="" width="10%">
+				<div class="col-lg-6 animate fade-in-right">
+					<div class="about-card chef-card">
+						<div class="about-card-icon">👨‍🍳</div>
+						<h3 class="about-card-title">Bizning Shef-oshpaz</h3>
+						<p class="about-card-text">
+							Bizning fast food xonamizdagi har bir taom — bu Atajanov Sardorbekning mehr bilan
+							tayyorlagan asari. U Yevropa oshxonasida 8 yil ishlagan, keyin esa O'zbekistonda 6 yil
+							davomida o'z mahoratini yanada boyitgan.
+						</p>
+						<p class="about-card-text">
+							Chef uchun ovqat tayyorlash bu shunchaki ish emas, bu — <strong>san'at</strong>. Shuning
+							uchun har bir burger, hot-dog yoki fri kartoshka o'zining betakror ta'miga ega.
+						</p>
+						<div class="chef-experience">
+							<div class="exp-item">
+								<span class="exp-number">8</span>
+								<span class="exp-label">yil Yevropa</span>
+							</div>
+							<div class="exp-item">
+								<span class="exp-number">6</span>
+								<span class="exp-label">yil O'zbekiston</span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -97,152 +165,217 @@
 	<!-- MENU SECTION -->
 	<section id="menu" class="menu-section">
 		<div class="container">
-			<h1 class="menu-section-title">Bizning menuyimiz</h1>
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="menu-items-left">
-						<div class="menu-item">
-							<img class="food-icon" src="menu-images/food5.jpg" alt="hot-dog">
-							<div class="food-content">
-								<h4 class="food-title">HOT-DOG</h4>
-								<span class="food-price">13.000 so'm</span>
-							</div>
-						</div>
-						<div class="menu-item">
-							<img class="food-icon" src="menu-images/food5.jpg" alt="hot-dog">
-							<div class="food-content">
-								<h4 class="food-title">HOT-DOG 2X</h4>
-								<span class="food-price">15.000 so'm</span>
-							</div>
-						</div>
-						<div class="menu-item">
-							<img class="food-icon" src="menu-images/food14.JPG" alt="hot-dog">
-							<div class="food-content">
-								<h4 class="food-title">KATTA HOT-DOG 2X</h4>
-								<span class="food-price">22.000 so'm</span>
-							</div>
-						</div>
-						<div class="menu-item">
-							<img class="food-icon" src="menu-images/food15.JPG" alt="hot-dog">
-							<div class="food-content">
-								<h4 class="food-title">KATTA HOT-DOG 3x</h4>
-								<span class="food-price">24.000 so'm</span>
-							</div>
-						</div>
-						<div class="menu-item">
-							<img class="food-icon" src="menu-images/food8.JPG" alt="hot-dog">
-							<div class="food-content">
-								<h4 class="food-title">GIBRID</h4>
-								<span class="food-price">38.000 so'm</span>
-							</div>
-						</div>
-						<div class="menu-item">
-							<img class="food-icon" src="menu-images/food10.JPG" alt="hot-dog">
-							<div class="food-content">
-								<h4 class="food-title">CHEF-DOG</h4>
-								<span class="food-price">40.000 so'm</span>
-							</div>
-						</div>
-						<div class="menu-item">
-							<img class="food-icon" src="menu-images/food1.jpg" alt="hot-dog">
-							<div class="food-content">
-								<h4 class="food-title">HAGGI</h4>
-								<span class="food-price">42.000 so'm</span>
-							</div>
-						</div>
-						<div class="menu-item">
-							<img class="food-icon" src="menu-images/food3.JPG" alt="hot-dog">
-							<div class="food-content">
-								<h4 class="food-title">PEKIN TOVUQ</h4>
-								<span class="food-price">22.000 so'm</span>
-							</div>
-						</div>
-						<div class="menu-item">
-							<img class="food-icon" src="menu-images/food3.JPG" alt="hot-dog">
-							<div class="food-content">
-								<h4 class="food-title">PEKIN TOVUQ 2X</h4>
-								<span class="food-price">28.000 so'm</span>
-							</div>
-						</div>
+			<div class="section-header animate fade-in-up">
+				<span class="section-tag">Menyu</span>
+				<h2 class="section-title">Bizning <span class="text-accent">taomlarimiz</span></h2>
+			</div>
+
+			<!-- Category Filter -->
+			<div class="menu-filter animate fade-in-up">
+				<button class="filter-btn active" data-filter="all">Barchasi</button>
+				<button class="filter-btn" data-filter="hotdog">Hot-Dog</button>
+				<button class="filter-btn" data-filter="burger">Burger</button>
+				<button class="filter-btn" data-filter="wrap">Lavash & Doner</button>
+				<button class="filter-btn" data-filter="other">Boshqalar</button>
+			</div>
+
+			<div class="menu-grid">
+				<!-- Hot-Dogs -->
+				<div class="menu-card animate scale-in" data-category="hotdog">
+					<div class="menu-card-image">
+						<img src="menu-images/food5.jpg" alt="Hot-Dog" loading="lazy" width="400" height="300">
+						<div class="menu-card-badge">Mashhur</div>
+					</div>
+					<div class="menu-card-body">
+						<h3 class="menu-card-title">Hot-Dog</h3>
+						<span class="menu-card-price">13,000 so'm</span>
 					</div>
 				</div>
-				<div class="col-lg-6">
-					<div class="menu-items-right">
-						<div class="menu-item">
-							<img class="food-icon" src="menu-images/food6.JPG" alt="hot-dog">
-							<div class="food-content">
-								<h4 class="food-title">GAMBURGER</h4>
-								<span class="food-price">30.000 so'm</span>
-							</div>
-						</div>
-						<div class="menu-item">
-							<img class="food-icon" src="menu-images/food7.JPG" alt="hot-dog">
-							<div class="food-content">
-								<h4 class="food-title">CHIZBURGER</h4>
-								<span class="food-price">35.000 so'm</span>
-							</div>
-						</div>
-						<div class="menu-item">
-							<img class="food-icon" src="menu-images/food11.JPG" alt="hot-dog">
-							<div class="food-content">
-								<h4 class="food-title">MEAT-BURGER</h4>
-								<span class="food-price">38.000 so'm</span>
-							</div>
-						</div>
-						<div class="menu-item">
-							<img class="food-icon" src="menu-images/food2.JPG" alt="hot-dog">
-							<div class="food-content">
-								<h4 class="food-title">DONER</h4>
-								<span class="food-price">35.000 so'm</span>
-							</div>
-						</div>
 
-						<div class="menu-item">
-							<img class="food-icon" src="menu-images/food12.JPG" alt="hot-dog">
-							<div class="food-content">
-								<h4 class="food-title">LAVASH CLASSIC</h4>
-								<span class="food-price">38.000 so'm</span>
-							</div>
-						</div>
-						<div class="menu-item">
-							<img class="food-icon" src="menu-images/food12.JPG" alt="hot-dog">
-							<div class="food-content">
-								<h4 class="food-title">SHAVERMA</h4>
-								<span class="food-price">30.000 so'm</span>
-							</div>
-						</div>
-
-						<div class="menu-item">
-							<img class="food-icon" src="menu-images/food9.JPG" alt="hot-dog">
-							<div class="food-content">
-								<h4 class="food-title">NON-KABOB</h4>
-								<span class="food-price">40.000 so'm</span>
-							</div>
-						</div>
-						<div class="menu-item">
-							<img class="food-icon" src="menu-images/food4.JPG" alt="hot-dog">
-							<div class="food-content">
-								<h4 class="food-title">PEKIN GOSHT</h4>
-								<span class="food-price">28.000 so'm</span>
-							</div>
-						</div>
-						<div class="menu-item">
-							<img class="food-icon" src="menu-images/food4.JPG" alt="hot-dog">
-							<div class="food-content">
-								<h4 class="food-title">PEKIN GOSHT 2X</h4>
-								<span class="food-price">35.000 so'm</span>
-							</div>
-						</div>
+				<div class="menu-card animate scale-in" data-category="hotdog">
+					<div class="menu-card-image">
+						<img src="menu-images/food5.jpg" alt="Hot-Dog 2X" loading="lazy" width="400" height="300">
 					</div>
-					
+					<div class="menu-card-body">
+						<h3 class="menu-card-title">Hot-Dog 2X</h3>
+						<span class="menu-card-price">15,000 so'm</span>
+					</div>
 				</div>
-				<div class="menu-item">
-							<img class="food-icon" src="menu-images/food13.JPG" alt="hot-dog">
-							<div class="food-content text-center">
-								<h4 class="food-title">SENDVICH</h4>
-								<span class="food-price">35.000 so'm</span>
-							</div>
-						</div>
+
+				<div class="menu-card animate scale-in" data-category="hotdog">
+					<div class="menu-card-image">
+						<img src="menu-images/food14.JPG" alt="Katta Hot-Dog 2X" loading="lazy" width="400" height="300">
+					</div>
+					<div class="menu-card-body">
+						<h3 class="menu-card-title">Katta Hot-Dog 2X</h3>
+						<span class="menu-card-price">22,000 so'm</span>
+					</div>
+				</div>
+
+				<div class="menu-card animate scale-in" data-category="hotdog">
+					<div class="menu-card-image">
+						<img src="menu-images/food15.JPG" alt="Katta Hot-Dog 3X" loading="lazy" width="400" height="300">
+					</div>
+					<div class="menu-card-body">
+						<h3 class="menu-card-title">Katta Hot-Dog 3X</h3>
+						<span class="menu-card-price">24,000 so'm</span>
+					</div>
+				</div>
+
+				<div class="menu-card animate scale-in" data-category="hotdog">
+					<div class="menu-card-image">
+						<img src="menu-images/food8.JPG" alt="Gibrid" loading="lazy" width="400" height="300">
+					</div>
+					<div class="menu-card-body">
+						<h3 class="menu-card-title">Gibrid</h3>
+						<span class="menu-card-price">38,000 so'm</span>
+					</div>
+				</div>
+
+				<div class="menu-card animate scale-in" data-category="hotdog">
+					<div class="menu-card-image">
+						<img src="menu-images/food10.JPG" alt="Chef-Dog" loading="lazy" width="400" height="300">
+						<div class="menu-card-badge chef-special">Chef maxsus</div>
+					</div>
+					<div class="menu-card-body">
+						<h3 class="menu-card-title">Chef-Dog</h3>
+						<span class="menu-card-price">40,000 so'm</span>
+					</div>
+				</div>
+
+				<!-- Burgers -->
+				<div class="menu-card animate scale-in" data-category="burger">
+					<div class="menu-card-image">
+						<img src="menu-images/food6.JPG" alt="Gamburger" loading="lazy" width="400" height="300">
+					</div>
+					<div class="menu-card-body">
+						<h3 class="menu-card-title">Gamburger</h3>
+						<span class="menu-card-price">30,000 so'm</span>
+					</div>
+				</div>
+
+				<div class="menu-card animate scale-in" data-category="burger">
+					<div class="menu-card-image">
+						<img src="menu-images/food7.JPG" alt="Chizburger" loading="lazy" width="400" height="300">
+						<div class="menu-card-badge">Mashhur</div>
+					</div>
+					<div class="menu-card-body">
+						<h3 class="menu-card-title">Chizburger</h3>
+						<span class="menu-card-price">35,000 so'm</span>
+					</div>
+				</div>
+
+				<div class="menu-card animate scale-in" data-category="burger">
+					<div class="menu-card-image">
+						<img src="menu-images/food11.JPG" alt="Meat-Burger" loading="lazy" width="400" height="300">
+					</div>
+					<div class="menu-card-body">
+						<h3 class="menu-card-title">Meat-Burger</h3>
+						<span class="menu-card-price">38,000 so'm</span>
+					</div>
+				</div>
+
+				<!-- Wraps & Doner -->
+				<div class="menu-card animate scale-in" data-category="wrap">
+					<div class="menu-card-image">
+						<img src="menu-images/food2.JPG" alt="Doner" loading="lazy" width="400" height="300">
+					</div>
+					<div class="menu-card-body">
+						<h3 class="menu-card-title">Doner</h3>
+						<span class="menu-card-price">35,000 so'm</span>
+					</div>
+				</div>
+
+				<div class="menu-card animate scale-in" data-category="wrap">
+					<div class="menu-card-image">
+						<img src="menu-images/food12.JPG" alt="Lavash Classic" loading="lazy" width="400" height="300">
+					</div>
+					<div class="menu-card-body">
+						<h3 class="menu-card-title">Lavash Classic</h3>
+						<span class="menu-card-price">38,000 so'm</span>
+					</div>
+				</div>
+
+				<div class="menu-card animate scale-in" data-category="wrap">
+					<div class="menu-card-image">
+						<img src="menu-images/food12.JPG" alt="Shaverma" loading="lazy" width="400" height="300">
+					</div>
+					<div class="menu-card-body">
+						<h3 class="menu-card-title">Shaverma</h3>
+						<span class="menu-card-price">30,000 so'm</span>
+					</div>
+				</div>
+
+				<!-- Other -->
+				<div class="menu-card animate scale-in" data-category="other">
+					<div class="menu-card-image">
+						<img src="menu-images/food1.jpg" alt="Haggi" loading="lazy" width="400" height="300">
+					</div>
+					<div class="menu-card-body">
+						<h3 class="menu-card-title">Haggi</h3>
+						<span class="menu-card-price">42,000 so'm</span>
+					</div>
+				</div>
+
+				<div class="menu-card animate scale-in" data-category="other">
+					<div class="menu-card-image">
+						<img src="menu-images/food3.JPG" alt="Pekin Tovuq" loading="lazy" width="400" height="300">
+					</div>
+					<div class="menu-card-body">
+						<h3 class="menu-card-title">Pekin Tovuq</h3>
+						<span class="menu-card-price">22,000 so'm</span>
+					</div>
+				</div>
+
+				<div class="menu-card animate scale-in" data-category="other">
+					<div class="menu-card-image">
+						<img src="menu-images/food3.JPG" alt="Pekin Tovuq 2X" loading="lazy" width="400" height="300">
+					</div>
+					<div class="menu-card-body">
+						<h3 class="menu-card-title">Pekin Tovuq 2X</h3>
+						<span class="menu-card-price">28,000 so'm</span>
+					</div>
+				</div>
+
+				<div class="menu-card animate scale-in" data-category="other">
+					<div class="menu-card-image">
+						<img src="menu-images/food9.JPG" alt="Non-Kabob" loading="lazy" width="400" height="300">
+					</div>
+					<div class="menu-card-body">
+						<h3 class="menu-card-title">Non-Kabob</h3>
+						<span class="menu-card-price">40,000 so'm</span>
+					</div>
+				</div>
+
+				<div class="menu-card animate scale-in" data-category="other">
+					<div class="menu-card-image">
+						<img src="menu-images/food4.JPG" alt="Pekin Go'sht" loading="lazy" width="400" height="300">
+					</div>
+					<div class="menu-card-body">
+						<h3 class="menu-card-title">Pekin Go'sht</h3>
+						<span class="menu-card-price">28,000 so'm</span>
+					</div>
+				</div>
+
+				<div class="menu-card animate scale-in" data-category="other">
+					<div class="menu-card-image">
+						<img src="menu-images/food4.JPG" alt="Pekin Go'sht 2X" loading="lazy" width="400" height="300">
+					</div>
+					<div class="menu-card-body">
+						<h3 class="menu-card-title">Pekin Go'sht 2X</h3>
+						<span class="menu-card-price">35,000 so'm</span>
+					</div>
+				</div>
+
+				<div class="menu-card animate scale-in" data-category="other">
+					<div class="menu-card-image">
+						<img src="menu-images/food13.JPG" alt="Sendvich" loading="lazy" width="400" height="300">
+					</div>
+					<div class="menu-card-body">
+						<h3 class="menu-card-title">Sendvich</h3>
+						<span class="menu-card-price">35,000 so'm</span>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -250,22 +383,168 @@
 	<!-- CONTACT SECTION -->
 	<section id="contact" class="contact-section">
 		<div class="container">
-			<h1 class="contact-section-title">Biz bilan bog'lanish</h1>
-			<p class="icons-center">
-				<a href="https://web.telegram.org/k/#@XIVAPOVAR"><img class="icon" src="./icons/tg-icon.png" alt="">Telegram</a>
-				<a href="https://www.instagram.com/chef_food_khiva/"><img class="icon" src="./icons/instagram-icon.png"
-						alt="">Instagram</a>
-				<a
-					href="https://www.google.com/maps/place/Chef+food/@41.4037129,60.3394641,12z/data=!3m1!4b1!4m6!3m5!1s0x41dfa5e388566cb7:0xefa1feb8742d8ec4!8m2!3d41.4037129!4d60.3394641!16s%2Fg%2F11sx4f_mrq?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D"><i
-						class="fa-solid fa-location-dot"></i>Manzil</a>
-				<a class="icon" href="">+998 99 16 16 51</a>
-			</p>
+			<div class="section-header animate fade-in-up">
+				<span class="section-tag">Aloqa</span>
+				<h2 class="section-title">Biz bilan <span class="text-accent">bog'laning</span></h2>
+			</div>
+			<div class="contact-grid animate fade-in-up delay-1">
+				<a href="https://t.me/XIVAPOVAR" class="contact-card" target="_blank" rel="noopener">
+					<div class="contact-icon telegram">
+						<svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+							<path
+								d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+						</svg>
+					</div>
+					<span class="contact-label">Telegram</span>
+					<span class="contact-handle">@XIVAPOVAR</span>
+				</a>
+
+				<a href="https://www.instagram.com/chef_food_khiva/" class="contact-card" target="_blank" rel="noopener">
+					<div class="contact-icon instagram">
+						<svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+							<path
+								d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+						</svg>
+					</div>
+					<span class="contact-label">Instagram</span>
+					<span class="contact-handle">@chef_food_khiva</span>
+				</a>
+
+				<a href="tel:+998991616551" class="contact-card">
+					<div class="contact-icon phone">
+						<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path
+								d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+						</svg>
+					</div>
+					<span class="contact-label">Telefon</span>
+					<span class="contact-handle">+998 99 161 65 51</span>
+				</a>
+
+				<a href="https://www.google.com/maps/place/Chef+food/@41.4037129,60.3394641,12z/data=!3m1!4b1!4m6!3m5!1s0x41dfa5e388566cb7:0xefa1feb8742d8ec4!8m2!3d41.4037129!4d60.3394641!16s%2Fg%2F11sx4f_mrq?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D"
+					class="contact-card" target="_blank" rel="noopener">
+					<div class="contact-icon location">
+						<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+							<circle cx="12" cy="10" r="3" />
+						</svg>
+					</div>
+					<span class="contact-label">Manzil</span>
+					<span class="contact-handle">Xiva shahri</span>
+				</a>
+			</div>
 		</div>
 	</section>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-		crossorigin="anonymous"></script>
+	<!-- FOOTER -->
+	<footer class="site-footer">
+		<div class="container">
+			<div class="footer-content">
+				<div class="footer-brand">
+					<span class="footer-logo">Chef Food</span>
+					<p class="footer-tagline">Xivaning eng mazali fast food'i</p>
+				</div>
+				<div class="footer-links">
+					<a href="#hero">Asosiy</a>
+					<a href="#about">Biz haqimizda</a>
+					<a href="#menu">Menu</a>
+					<a href="#contact">Bog'lanish</a>
+				</div>
+				<div class="footer-bottom">
+					<p>&copy; 2025 Chef Food Khiva. Barcha huquqlar himoyalangan.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- BOOTSTRAP 5.3 JS (matched version) -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- CUSTOM JS -->
+	<script>
+		// Navbar scroll effect
+		const navbar = document.getElementById('mainNav')
+		window.addEventListener('scroll', () => {
+			if (window.scrollY > 50) {
+				navbar.classList.add('scrolled')
+			} else {
+				navbar.classList.remove('scrolled')
+			}
+		}, { passive: true })
+
+		// Scroll animations with IntersectionObserver
+		const observerOptions = {
+			threshold: 0.1,
+			rootMargin: '0px 0px -50px 0px'
+		}
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('visible')
+					observer.unobserve(entry.target)
+				}
+			})
+		}, observerOptions)
+
+		document.querySelectorAll('.animate').forEach(el => observer.observe(el))
+
+		// Menu filter
+		const filterBtns = document.querySelectorAll('.filter-btn')
+		const menuCards = document.querySelectorAll('.menu-card')
+
+		filterBtns.forEach(btn => {
+			btn.addEventListener('click', () => {
+				filterBtns.forEach(b => b.classList.remove('active'))
+				btn.classList.add('active')
+
+				const filter = btn.dataset.filter
+				menuCards.forEach((card, index) => {
+					if (filter === 'all' || card.dataset.category === filter) {
+						card.style.display = ''
+						card.style.animationDelay = `${index * 0.05}s`
+					} else {
+						card.style.display = 'none'
+					}
+				})
+			})
+		})
+
+		// Smooth scroll for nav links & close mobile menu
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault()
+				const target = document.querySelector(this.getAttribute('href'))
+				if (target) {
+					target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+				}
+				// Close mobile menu
+				const navCollapse = document.getElementById('navbarNav')
+				if (navCollapse.classList.contains('show')) {
+					bootstrap.Collapse.getInstance(navCollapse)?.hide()
+				}
+			})
+		})
+
+		// Active nav link on scroll
+		const sections = document.querySelectorAll('section[id]')
+		window.addEventListener('scroll', () => {
+			const scrollY = window.scrollY + 100
+			sections.forEach(section => {
+				const top = section.offsetTop
+				const height = section.offsetHeight
+				const id = section.getAttribute('id')
+				const link = document.querySelector(`.nav-link[href="#${id}"]`)
+				if (link) {
+					if (scrollY >= top && scrollY < top + height) {
+						document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'))
+						link.classList.add('active')
+					}
+				}
+			})
+		}, { passive: true });
+	</script>
+
 </body>
 
 </html>
